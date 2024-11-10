@@ -1,0 +1,338 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    position: relative;
+}
+
+
+
+.navbar {
+    background-color: black;
+
+
+}
+
+.navbar-items-alignment {
+    text-align: right;
+}
+
+button {
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+}
+
+.carousel-item {
+    height: 100%;
+    position: relative;
+}
+
+
+.hidden {
+    position: absolute;
+    z-index: 9999;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+.heading {
+    Font-family: "sans-serif";
+    letter-spacing: 0.5px;
+    font-size: 55px;
+    font-weight: 800;
+    color: white;
+}
+
+.sideheading {
+    font-size: 1.5em;
+    Font-family: "sans-serif";
+    font-weight: 300;
+    color: white;
+}
+
+.btn1,
+.btn2 {
+
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "sans-serif";
+    font-weight: inherit;
+    height: 48px;
+    padding: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: top;
+
+
+
+}
+
+.btn1 {
+    background-color: #cd192d;
+    border: 0px solid #cd192d;
+
+}
+
+.btn2 {
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn1:hover {
+    background-color: #e3283e;
+    border: 0px solid #e3283e;
+    color: #fff;
+}
+
+.btn2:hover {
+    background-color: gray;
+    border: 0px solid gray;
+    color: #fff;
+
+}
+
+.section-block {
+    width: 100%;
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #2a2a2a;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.enq,
+.enq1 {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 17px;
+    letter-spacing: .5px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+
+}
+
+
+
+.triumph-head {
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    line-height: 70px;
+    margin: 0px 0px 40px;
+    color: #000;
+    padding-top: 20px;
+}
+
+.container-2 {
+    margin-top: 60px;
+}
+
+.container-9 {
+    padding: 45px 20px 70px;
+    text-align: center;
+}
+
+.para1 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #000;
+    letter-spacing: 2px;
+
+}
+
+.line {
+    line-height: 70px;
+}
+
+.container-3 {
+    margin: 0;
+    padding: 0;
+    height: 60vh;
+    background-image: url('https://media.triumphmotorcycles.co.uk/image/upload/f_auto/q_auto:eco/sitecoremedialibrary/media-library/images/home/hompage%20images/full%20width%20cta/homepage-fwcta-alt-1920x768.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 30px 0px;
+}
+
+.button5 {
+    background-color: #000;
+    color: #fff;
+    width: 25%;
+}
+
+.heading-3 {
+    color: #fff;
+    font-family: sans-serif;
+}
+
+.para2 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #000;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.para3 {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    color: #000;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+.button-last{
+    background-color: #000;
+    color: #fff;
+    width: 40%;
+    transition-duration: 0.8s;
+}
+.button-last-1{
+    background-color: #000;
+    color: #fff;
+    width: 50%;
+    transition-duration: 0.8s;
+}
+.button-last-1:hover{
+    background-color: gray;
+    color: #fff;
+
+}
+.button-last:hover{
+    background-color: gray;
+    color: #fff;
+}
+@media (max-width: 1024px) {
+    .hidden {
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+
+    .heading {
+        font-size: 30px;  
+    }
+
+    .sideheading {
+        font-size: 1em;  
+    }
+
+    .btn1, .btn2 {
+        font-size: 14px;  
+        padding: 10px 15px;  
+    }
+
+    .section-block {
+        flex-direction: row; 
+        padding: 15px;
+    }
+
+    .enq,
+    .enq1 {
+        font-size: 14px; 
+    }
+    .enquire,.booknow{
+        width: 40px;
+    }
+    .button-last-1{
+        
+        width: 80%;
+        
+    }
+}
+@media (max-width: 768px) {
+    .hidden {
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%); 
+    }
+
+    .heading {
+        font-size: 25px;  
+    }
+
+    .sideheading {
+        font-size: 0.7em;  
+    }
+
+    .btn1, .btn2 {
+        font-size: 12px;  
+        padding: 8px 12px;  
+    }
+
+    .section-block {
+        flex-direction: row;
+        padding: 10px;
+    }
+
+    .enq,
+    .enq1 {
+        font-size: 13px;  
+       
+    }
+    .enquire,.booknow{
+        width: 30px;
+    }
+    .button-last-1{
+        
+        width: 50%;
+        
+    }
+}
+@media (max-width: 480px) {
+    .hidden {
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);  
+    }
+
+    .heading {
+        font-size: 17px; 
+        font-weight: bolder; 
+    }
+
+    .sideheading {
+        font-size: 0.5em; 
+    }
+
+    .btn1, .btn2 {
+        font-size: 10px;  
+        padding: 5px 10px;  
+    }
+
+    .section-block {
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    .enq,
+    .enq1 {
+        font-size: 12px;  
+       
+    }
+    .enquire,.booknow{
+        width: 20px;
+    }
+    
+}

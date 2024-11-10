@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha3849/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <title>Document</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<style>
+  /* Make the navbar occupy the full screen height */
+
+
+  .navbar-nav {
+    margin-top: auto;
+    /* Push the menu items down */
+  }
+
+  /* Dropdown menu - full screen style */
+  .dropdown-menu {
+    position: absolute;
+
+    top: 40;
+  
+    left: 0;
+  
+    width: 100vw;
+
+    height: 50vh;
+
+    background-color: rgba(0, 0, 0, 0.9);
+  
+    color: white;
+    display: none;
+    /* Hidden by default */
+    z-index: 9999;
+    /* Ensure it's on top */
+    overflow-y: auto;
+    /* Enable scrolling if content overflows */
+  }
+
+  /* Show dropdown when clicked */
+  .nav-item.dropdown.show .dropdown-menu {
+    display: block;
+    /* Make it visible */
+  }
+
+ 
+
+  .navbar-nav .nav-link {
+    font-size: 1.5rem;
+  }
+
+  /* Styling for dropdown items */
+  .dropdown-item {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+</style>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">
+      <span class="nav-item dropdown ">
+      <img src="./logo (1).png" alt="">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse " id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto ">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Dealer <span class="sr-only">(current)</span> </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="#">customize </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Finance offers </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Book Now </a>
+        </li>
+      </ul>
+
+    </div>
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          width="28px" height="30px" viewBox="0 0 64 64" enable-background="new 0 0 64 64" xml:space="preserve"
+          fill="#000">
+          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC"
+            stroke-width="11.264"></g>
+          <g id="SVGRepo_iconCarrier">
+            <path fill="#808080"
+              d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z">
+            </path>
+          </g>
+        </svg>
+        INDIA
+      </a>
+
+      <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+      
+    </span>
+    </nav>
+
+
+
+
+</body>
+
+</html>

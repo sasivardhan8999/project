@@ -1,0 +1,254 @@
+/* Default Styles (Large Screens - Desktop) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    position: relative;
+}
+
+
+
+.navbar {
+    background-color: black;
+
+
+}
+
+.navbar-items-alignment {
+    text-align: right;
+}
+button {
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+}
+
+.carousel-item {
+    height: 100vh;
+    position: relative;
+}
+
+.hidden {
+    position: absolute;
+    z-index: 9999;
+    top: 30%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.heading {
+    font-family: "sans-serif";
+    letter-spacing: 0.5px;
+    font-size: 55px;
+    font-weight: 800;
+    color: white;
+}
+
+.sideheading {
+    font-size: 1.5em;
+    font-family: "sans-serif";
+    font-weight: 300;
+    color: white;
+}
+
+.btn1,
+.btn2 {
+    border-radius: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "sans-serif";
+    font-weight: inherit;
+    height: 48px;
+    padding: 0 20px;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+
+.btn1 {
+    background-color: #cd192d;
+    border: 0px solid #cd192d;
+}
+
+.btn2 {
+    background-color: #000;
+    border-color: #000;
+}
+
+.btn1:hover {
+    background-color: #e3283e;
+    border: 0px solid #e3283e;
+    color: #fff;
+}
+
+.btn2:hover {
+    background-color: gray;
+    border: 0px solid gray;
+    color: #fff;
+}
+
+.section-block {
+    width: 100%;
+    background-color: #2a2a2a;
+    border-bottom: 1px solid #2a2a2a;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.enq,
+.enq1 {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 17px;
+    letter-spacing: .5px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Media Queries for Small and Medium Devices */
+
+/* Tablets (Portrait Mode) */
+@media (max-width: 1024px) {
+    .hidden {
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%); /* Center text horizontally */
+    }
+
+    .heading {
+        font-size: 40px;  /* Reduce heading size for smaller screens */
+    }
+
+    .sideheading {
+        font-size: 1.2em;  /* Smaller sideheading */
+    }
+
+    .btn1, .btn2 {
+        font-size: 14px;  /* Reduce button text size */
+        padding: 10px 15px;  /* Adjust button padding */
+    }
+
+    .section-block {
+        flex-direction: column;  /* Stack action buttons vertically */
+        padding: 15px;
+    }
+
+    .enq,
+    .enq1 {
+        font-size: 14px;  /* Smaller font size for action text */
+    }
+}
+
+/* Mobile Devices (Portrait Mode) */
+@media (max-width: 768px) {
+    .hidden {
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);  /* Center text */
+    }
+
+    .heading {
+        font-size: 32px;  /* Further reduce heading size */
+    }
+
+    .sideheading {
+        font-size: 1em;  /* Even smaller sideheading */
+    }
+
+    .btn1, .btn2 {
+        font-size: 12px;  /* Smaller button text */
+        padding: 8px 12px;  /* Reduced padding */
+    }
+
+    .section-block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;  /* Center the buttons */
+        padding: 10px;
+    }
+
+    .enq,
+    .enq1 {
+        font-size: 13px;  /* Smaller font size */
+        line-height: 30px;  /* Adjust line height */
+    }
+}
+
+/* Small Mobile Devices (Portrait) */
+@media (max-width: 480px) {
+    .hidden {
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);  /* Center the content */
+    }
+
+    .heading {
+        font-size: 28px;  /* Further reduce heading size */
+    }
+
+    .sideheading {
+        font-size: 0.9em;  /* Smaller sideheading */
+    }
+
+    .btn1, .btn2 {
+        font-size: 10px;  /* Very small button text */
+        padding: 6px 10px;  /* Smaller padding */
+    }
+
+    .section-block {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8px;
+    }
+
+    .enq,
+    .enq1 {
+        font-size: 12px;  /* Further reduce font size */
+        line-height: 28px;  /* Adjust line height */
+    }
+}
+
+/* Mobile Landscape Mode */
+@media (max-width: 767px) {
+    .hidden {
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);  /* Center content */
+    }
+
+    .heading {
+        font-size: 35px;  /* Reduce heading size */
+    }
+
+    .sideheading {
+        font-size: 1.2em;  /* Reduce sideheading size */
+    }
+
+    .btn1, .btn2 {
+        font-size: 14px;  /* Button text size */
+        padding: 10px 15px;  /* Button padding */
+    }
+
+    .section-block {
+        flex-direction: row;  /* Horizontal layout for buttons */
+        justify-content: space-around;
+        padding: 15px;
+    }
+
+    .enq,
+    .enq1 {
+        font-size: 15px;  /* Action text font size */
+    }
+}
